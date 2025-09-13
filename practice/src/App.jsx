@@ -1,19 +1,17 @@
-import ProductCard from "./ProductCard.jsx" 
+import ProductCard from "./ProductCard.jsx"
+import Greeting from "./Greeting.jsx"
 function App() {
-const productName = "car"
-    const price = 1230
-    const isAvailable = true
+  const productName = "car"
+  const price = 1230
+  const isAvailable = true
+  const myname="trisha"
   return (
     <>
-     <div>
-            <p>productName:{productName}</p>
-            <p>price:{price}</p>
-            <p>isAvailable:{isAvailable}</p>
-        </div>
+    
 
-    <ProductCard />
+      <Greeting receivedname={myname} age={22}/>
     </>
-  
+
   )
 }
 export default App
