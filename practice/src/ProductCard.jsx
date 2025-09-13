@@ -1,17 +1,12 @@
-function ProductCard() {
-    const productName = "car"
-    const price = 1230
-    const isAvailable = true
-    {
-    return (
-        <div>
-            <p>productName:{productName}</p>
-            <p>price:{price}</p>
-            <p>isAvailable:{isAvailable}</p>
-        </div>
 
-    
+function ProductCard(product){
+    return(
+        <div className="box1">
+            <h3 className="title">Product name:{product.productName}</h3>
+            <p className="price">Price :{product.price}</p>
+            {product.isAvailable===true?<p className="instock">In Stock</p>:<p className="outstock">Out of Stock</p>}
+        </div>
     )
 }
-}
-export default ProductCard;
+
+export default ProductCard

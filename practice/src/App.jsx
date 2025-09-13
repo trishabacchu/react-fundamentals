@@ -1,17 +1,18 @@
 import ProductCard from "./ProductCard.jsx"
+import Profile from "./Profile1.jsx"
 import Greeting from "./Greeting.jsx"
+import Id from "./Id.jsx"
+import "./Product.css"
 function App() {
-  const productName = "car"
-  const price = 1230
-  const isAvailable = true
-  const myname="trisha"
+  
   return (
-    <>
-    
-
-      <Greeting receivedname={myname} age={22}/>
-    </>
-
+    <div className="box" >
+      {/* <ProductCard productName="Banana" price={30} isAvailable={true}/>
+      <ProductCard productName="Banana" price={30} isAvailable={false} /> */}
+      <Id course="B.Tech" rollnumber="23VV1A0505" />
+      
+    </div>
   )
 }
-export default App
+
+export default App;
